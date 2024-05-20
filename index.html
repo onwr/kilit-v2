@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DİJİTAL BATTAL</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap"
+      rel="stylesheet"
+    />
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: ["Manrope", "sans-serif"],
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body class="min-h-screen">
+    <img src="./images/ataturk.png" class="fixed -left-36 w-auto" />
+    <div class="font-manrope flex flex-col items-center">
+      <img src="./images/logo.png" class="w-52 mt-6" />
+      <h1 class="text-3xl mt-2 font-bold">
+        BATTALGAZİ MESLEKİ VE TEKNİK ANADOLU LİSESİ
+      </h1>
+      <h2 class="text-2xl font-extrabold">BİLİŞİM TEKNOLOJİLERİ ALANI</h2>
+      <h1 id="randomPass" class="text-5xl font-bold tracking-widest mt-20">
+        Oluşturuluyor...
+      </h1>
+      <div
+        id="verify"
+        class="flex flex-row justify-center text-center px-2 mt-6"
+      >
+        <input
+          class="m-4 shadow-2xl border-2 outline-none text-3xl h-20 w-20 text-center form-control rounded-3xl"
+          type="text"
+          id="first"
+          maxlength="1"
+        />
+        <input
+          class="m-4 border-2 shadow-2xl outline-none h-20 w-20 text-3xl text-center form-control rounded-3xl"
+          type="text"
+          id="second"
+          maxlength="1"
+        />
+        <input
+          class="m-4 border-2 shadow-2xl outline-none text-3xl h-20 w-20 text-center form-control rounded-3xl"
+          type="text"
+          id="third"
+          maxlength="1"
+        />
+        <input
+          class="m-4 border-2 text-3xl shadow-2xl outline-none h-20 w-20 text-center form-control rounded-3xl"
+          type="text"
+          id="fourth"
+          maxlength="1"
+        />
+        <input
+          class="m-4 border-2 outline-none shadow-2xl text-3xl h-20 w-20 text-center form-control rounded-3xl"
+          type="text"
+          id="fifth"
+          maxlength="1"
+        />
+        <input
+          class="m-4 border-2 shadow-2xl outline-none text-3xl h-20 w-20 text-center form-control rounded-3xl"
+          type="text"
+          id="sixth"
+          maxlength="1"
+        />
+      </div>
+      <div
+        id="sayiGir"
+        class="flex flex-row justify-center items-center text-center"
+      >
+        <button
+          class="m-1 z-50 border-8 outline-none active:scale-105 text-3xl h-16 w-16 text-center form-control rounded-3xl"
+          id="sayibir"
+        >
+          1
+        </button>
+        <button
+          class="m-1 z-50 border-8 outline-none active:scale-105 text-3xl h-16 w-16 text-center form-control rounded-3xl"
+          id="sayiiki"
+        >
+          2
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayiuc"
+        >
+          3
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayidort"
+        >
+          4
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayibes"
+        >
+          5
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayialti"
+        >
+          6
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayiyedi"
+        >
+          7
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayisekiz"
+        >
+          8
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayidokuz"
+        >
+          9
+        </button>
+        <button
+          class="m-1 border-8 outline-none text-3xl active:scale-105 h-16 w-16 text-center form-control rounded-3xl"
+          id="sayisifir"
+        >
+          0
+        </button>
+        <button
+          id="sifirla"
+          class="relative m-1 z-0 mt-2 h-16 active:scale-110 font-bold text-2xl rounded-3xl bg-black w-16 text-neutral-50"
+        >
+          Sil
+        </button>
+      </div>
+      <button
+        class="relative z-0 mt-2 h-16 active:scale-110 font-bold text-2xl rounded-3xl bg-black w-96 text-neutral-50 duration-100"
+      >
+        KİLİT AÇ
+      </button>
+      <div
+        class="flex fixed bottom-8 w-full items-center justify-between px-20"
+      >
+        <div class="text-light flex-1 font-bold">&copy; Onur Kürkaya</div>
+        <img src="./images/kurkaya.png" class="w-40" />
+        <div class="flex-1 text-end font-medium text-lg">
+          www.<span class="font-extrabold">kurkayayazilim</span>.com.tr
+        </div>
+      </div>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", function (event) {
+        function OTPInput() {
+          const inputs = document.querySelectorAll("#verify > *[id]");
+          const buttons = document.querySelectorAll("#sayiGir > button");
+          const clearButton = document.getElementById("sifirla");
+
+          buttons.forEach((button, index) => {
+            button.addEventListener("click", function () {
+              const nextInput = Array.from(inputs).find(
+                (input) => input.value === ""
+              );
+
+              if (nextInput) {
+                nextInput.value = button.textContent.trim();
+                if (index < inputs.length - 1) {
+                  inputs[index + 1].focus();
+                }
+              }
+            });
+          });
+
+          inputs.forEach((input, index) => {
+            input.addEventListener("keydown", function (event) {
+              if (event.key === "Backspace") {
+                input.value = "";
+                if (index !== 0) inputs[index - 1].focus();
+              }
+            });
+          });
+
+          clearButton.addEventListener("click", function () {
+            inputs.forEach((input) => {
+              input.value = "";
+            });
+            inputs[0].focus();
+          });
+        }
+
+        OTPInput();
+      });
+    </script>
+  </body>
+</html>
